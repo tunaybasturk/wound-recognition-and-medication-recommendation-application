@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8E3E1"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kullanici_adi_giris_"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        app:boxBackgroundColor="#00000000"
+        app:boxBackgroundMode="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <EditText
+            android:id="@+id/email_giris"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:background="@drawable/dialog_bg"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sifre_goster"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_marginTop="@dimen/_370sdp"
+        app:boxBackgroundColor="#00000000"
+        app:boxBackgroundMode="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/sifre_giris"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:background="@drawable/dialog_bg"
+            android:ems="10"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/giris"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:backgroundTint="#30A08C"
+        android:gravity="center"
+        android:text="Giriş Yap"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifre_goster" />
+
+    <TextView
+        android:id="@+id/hesap_yokmu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Bir hesabınız yok mu?"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/giris" />
+
+    <TextView
+        android:id="@+id/kayit_ol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Kayıt Ol"
+        android:textColor="#5AC1AD"
+        android:textStyle="bold"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toEndOf="@+id/hesap_yokmu"
+        app:layout_constraintTop_toBottomOf="@+id/giris" />
+
+    <TextView
+        android:id="@+id/hosgeldiniz"
+        android:layout_width="@dimen/_175sdp"
+        android:layout_height="wrap_content"
+        android:text="Hoşgeldiniz !"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_224sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_marginTop="@dimen/_125sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/giris_ekran_icon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/_124sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sol_ust_resim" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

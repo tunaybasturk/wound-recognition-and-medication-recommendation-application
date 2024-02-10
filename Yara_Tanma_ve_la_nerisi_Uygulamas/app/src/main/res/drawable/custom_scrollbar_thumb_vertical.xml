@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Kaydırma çubuğunun arka plan rengi -->
+    <solid android:color="#E6E6E6"/>
+
+    <!-- Kaydırma çubuğunun boyutları -->
+    <size android:width="10dp" android:height="40dp"/>
+
+    <!-- Kaydırma çubuğunun köşe yuvarlatması -->
+    <corners android:radius="4dp"/>
+
+    <!-- Kaydırma çubuğunun kenar çizgisi -->
+    <stroke android:width="2dp" android:color="#FFFFFF"/>
+</shape>

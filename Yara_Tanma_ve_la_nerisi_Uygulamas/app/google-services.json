@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "536764957846",
+    "project_id": "loginsingupwithotp",
+    "storage_bucket": "loginsingupwithotp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536764957846:android:3473c49e44d83d25456eb7",
+        "android_client_info": {
+          "package_name": "com.example.yara_tanma_ve_la_nerisi_uygulamas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536764957846-7sovvkqcu03nto680q1gpit7uighde25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpwBn6amu2Akt1eXkf05OmWLgVERF24CY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536764957846-7sovvkqcu03nto680q1gpit7uighde25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
